@@ -13,3 +13,5 @@
 *.rej
 *~
 *.pyc
+CMakeFiles/cmake.check_cache
+CMakeCache.txt
