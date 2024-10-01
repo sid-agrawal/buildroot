@@ -1332,6 +1332,7 @@ menu "External python modules"
 	source "package/python-zlmdb/Config.in"
 	source "package/python-zope-interface/Config.in"
 	source "package/python-zopfli/Config.in"
+	source "package/python-pybind11/Config.in"
 endmenu
 endif
 	source "package/quickjs/Config.in"
