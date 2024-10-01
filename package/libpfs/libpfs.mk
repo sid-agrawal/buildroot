@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-LIBPFS_VERSION = 1.0.1
+LIBPFS_VERSION = 1.0.2
 LIBPFS_SITE = $(call github,sid-agrawal,pfs,v$(LIBPFS_VERSION))
 LIBPFS_LICENSE = MIT
 LIBPFS_LICENSE_FILES = copyright
