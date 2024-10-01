@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Buildroot 2022.08-rc2-8-gf5c1be9652-dirty Configuration
+# Buildroot 2022.08-rc2-13-g38dc462e95 Configuration
 #
 BR2_HAVE_DOT_CONFIG=y
 BR2_HOST_GCC_AT_LEAST_4_9=y
@@ -676,7 +676,7 @@ BR2_PACKAGE_MAKE=y
 # BR2_PACKAGE_RIPGREP is not set
 # BR2_PACKAGE_SUBVERSION is not set
 # BR2_PACKAGE_TREE is not set
-# BR2_PACKAGE_LIBPFS is not set
+BR2_PACKAGE_LIBPFS=y
 
 #
 # Filesystem and flash utilities
