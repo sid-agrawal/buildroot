@@ -1,0 +1,6 @@
+config BR2_PACKAGE_PYTHON_PYBIND11
+	bool "python-pybind11"
+	help
+	  Seamless operability between C++11 and Python.
+
+	  https://github.com/pybind/pybind11
