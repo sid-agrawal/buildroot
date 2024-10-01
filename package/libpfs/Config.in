@@ -1,0 +1,6 @@
+config BR2_PACKAGE_LIBPFS
+	bool "libpfs"
+	help
+	  Support for reading pfs
+
+	  https://github.com/sid-agrawal/pfs
