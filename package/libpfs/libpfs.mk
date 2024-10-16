@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-LIBPFS_VERSION = e3e998d
+LIBPFS_VERSION = cellulos  # Branch name to track
 LIBPFS_SITE = $(call github,sid-agrawal,pfs,$(LIBPFS_VERSION))
 LIBPFS_LICENSE = MIT
 LIBPFS_LICENSE_FILES = copyright
