@@ -37,7 +37,7 @@ x86_64)
   ;;
 aarch64)
   copyPythonFiles $2
-  setNeo4jPaths $1
+  copyPFSFiles $1
   ;;
 *)
     echo $USAGE_TEXT
