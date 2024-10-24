@@ -4,7 +4,7 @@ copyPythonFiles() {
   pushd .
   cd output/target/root/proc
   echo "Copying model files"
-  cp ~/OSmosis/scripts/proc/*.py .
+  cp $1/scripts/proc/*.py .
   popd
 }
 
@@ -22,24 +22,21 @@ copyPFSFiles() {
   popd
 }
 
-USAGE_TEXT=$'Usage: ./build-helper.sh x86_64 | aarch64'
+USAGE_TEXT=$'Usage: ./build-helper.sh <x86_64 | aarch64> <root of OSMosis dir>'
 
-if [ -z "$1" ]; then
+if [ $# -ne 2 ]; then
   echo "Please specify the arch: x86_64 or aarch64"
   echo "$USAGE_TEXT"
   exit 1
 fi
 
-copyPythonFiles
-copyPFSFiles $1
-
 case "$1" in
 x86_64)
-  copyPythonFiles
+  copyPythonFiles $2
   copyPFSFiles $1
   ;;
 aarch64)
-  copyPythonFiles
+  copyPythonFiles $2
   setNeo4jPaths $1
   ;;
 *)
