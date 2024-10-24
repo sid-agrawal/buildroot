@@ -4,9 +4,7 @@ copyPythonFiles() {
   pushd .
   cd output/target/root/proc
   echo "Copying model files"
-  cp ~/OSmosis/scripts/proc/generic_model.py .
-  cp ~/OSmosis/scripts/proc/proc_model.py .
-  cp ~/OSmosis/scripts/proc/utils.py .
+  cp ~/OSmosis/scripts/proc/*.py .
   popd
 }
 
