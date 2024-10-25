@@ -30,6 +30,8 @@ if [ $# -ne 2 ]; then
   exit 1
 fi
 
+mkdir -p output/target/root/proc
+
 case "$1" in
 x86_64)
   copyPythonFiles $2
