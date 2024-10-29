@@ -8,7 +8,7 @@ pwd
 if [ "${1}" = "serial-only" ]; then
     EXTRA_ARGS='-nographic'
 else
-    EXTRA_ARGS='-serial stdio'
+    EXTRA_ARGS='-serial mon:stdio'
 fi
 
 export PATH="/home/siagraw/buildroot/qemu/buildroot-x86/output/host/bin:${PATH}"
